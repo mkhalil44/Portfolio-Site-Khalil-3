@@ -1,0 +1,431 @@
+/*
+Colors used:
+Primary Color (ORANGE): #d46d18; RGBA: (212,109,27,1.0)
+Secondary Color (DARK GREY): #52514f; RGBA: (82,81,79,1.0)
+Secondary Color (LIGHT GREY): #bebcbb; RGBA: (212,188,187,1.0)
+*/
+ 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+b* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to bottom, #ffffff, #fdd837);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1; /* Sets the line-height to 1 * the font-size */
+  color: #000000;
+  text-align: center;
+}
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0px 3px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:         0px 3px 20px 0px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+}
+main {
+  padding-top: 100px;
+}
+h1, h2, h3, h4 {
+  font-family: 'Abril Fatface', cursive;
+  line-height: 1.4;
+  color: #000000;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #707070;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+}
+a:visited { /* visited link */
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #d81B61;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+}
+a:active { /* selected link */
+  color: #d81B61;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.button {
+  display: inline-block;
+  background-color: transparent;
+  float: right;
+  border: none;
+  color: #424242;
+  font-weight: 400;
+  padding: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:hover,
+.button:focus {
+  display: inline-block;
+  background-color: #d81B61;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:active {
+  display: inline-block;
+  background-color: #d81B61;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+.button.contact {
+  background-color: #d81B61;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 125px;
+  transition: 1s;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 18px;
+  text-align: center;
+  float: none;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+.button.contact:active {
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: underline;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+#hero h1 {
+  text-align: center;
+}
+.logo {
+  max-width: 50px;
+  position: fixed;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #707070;
+}
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #d81B61;
+}
+nav > ul > li > a:active {
+  text-transform: underline;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-top: 13px;
+}
+
+.navtoggle.responsive nav {
+  padding: 65px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(216,27,97,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+#work .row {
+  margin: 25px 0;
+  padding: 10px 10px 30px 10px;
+  background-color: #ffffff;
+  text-align: left;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+#work h3 {
+  margin: 15px 10px;
+}
+#work p {
+  margin: 15px 10px;
+}
+#navbar .container {
+  display: block;
+}
+div > ul.b {
+  list-style-type: none;
+  padding: 0px;
+}
+div > ul.b > li {
+  display: inline;
+}
+svg {
+  max-width: 50px;
+}
+#entries .row {
+  margin: 25px 0;
+  padding: 10px 10px 30px 10px;
+  background-color: #ffffff;
+  text-align: left;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+#about-entries .row {
+  margin: 25px 10px;
+  padding: 10px 10px 15px 10px;
+  background-color: #ffffff;
+  text-align: left;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+#about-entries h2 {
+  padding: 0 10px;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: right;
+  padding: 5px;
+  vertical-align: top;
+}
+td {
+  text-align: left;
+  padding: 5px;
+  vertical-align: top;
+}
+#about-entries h4 {
+  margin: 0px;
+}
+#about-entries p {
+  margin: 8px;
+}
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#pink-twitter .st0 {
+  fill: #ffffff;
+}
+#pink-twitter .st1 {
+  fill: #d81b60;
+}
+#pink-linkedin .st0 {
+  fill: #d81b60;
+}
+#pink-linkedin .st1 {
+  fill: #ffffff;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    z-index: 1;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  nav > ul > li {
+    display: none;
+  }
+  .navtoggle.responsive nav {
+    padding: 0px;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+    border-top: none;
+    padding: 0px;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  .col-md-6 {
+    width: 50%;
+    padding: 8px;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #work h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  a.button {
+    padding: 0px;
+    }
+  #work .row {
+    padding: 10px;
+    position: relative;
+  }
+  #work a.button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  #work img {
+    min-height: 279px;
+    object-fit: cover;
+  }
+  #entries .row {
+    padding: 10px;
+    position: relative;
+  }
+  #entries a.button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  #entries h2 {
+    margin-top: 0px;
+  }
+  #entries img {
+    min-width: 279px;
+    min-height: 279px;
+    object-fit: cover;
+  }
+  #kinderclimbers .row {
+    padding-bottom: 38px;
+  }
+  #about-entries .row {
+    padding-bottom: 10px;
+  }
+  #about-entries .col-md-6::before {
+    content: "";
+    float: left;
+    padding-top: 0%;
+  }
+  #jessica-about img {
+    min-width: 284px;
+    object-fit: cover;
+  }
+  #jill-about img {
+    min-width: 284px;
+    object-fit: cover;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+.col-lg-5 {
+  width: 41.66%;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+.col-lg-5 img {
+  max-height: 279px;
+  object-fit: cover;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
