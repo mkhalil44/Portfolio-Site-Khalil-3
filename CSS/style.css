@@ -7,6 +7,34 @@ Secondary Color (LIGHT GREY): #bebcbb; RGBA: (212,188,187,1.0)
 font-family: 'Montserrat', sans-serif;
 */
 
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #52514f;
+  text-align: center;
+  position: relative;
+}
+
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul> li {
+  display: inline-block;
+  width: 100%
+
+}
+nav > ul > li a {
+  padding: 0 15px;
+  text-transform: uppercase;font-weight: 700;
+  color: #52514f;
+}
+nav > ul > li > a:visited {
+  color: #d46d18;
+}
+}
 * {
   box-sizing: border-box;
 }
@@ -17,6 +45,9 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #52514f;
+}
+main {
+  padding-top: 133px;
 }
 
 h1, h2, h3, h4 {
@@ -49,13 +80,13 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #d46d18;;
+  color: #d46d18;
 }
 a:hover,
 a:focus {
   color: #d46d18;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: underline; /* Underlining when hovering over a link */ }
 
 }
@@ -98,4 +129,29 @@ color: #ffffff !important;
 background: #d46d18;
 border-color: #d46d18 !important;
 transition: all 0.4s ease 0s;
+}
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+#hero {
+  background-color: #52514f;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+  color: #ffffff;
+}
+.logo {
+  max-width: 100px;
+}
+#work h2 {
+  text-align:center
 }
