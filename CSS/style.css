@@ -12,22 +12,23 @@ header {
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #52514f;
-  text-align: center;
+  text-align: unset;
   position: relative;
-
-
 }
 
-
+nav {
+  display: inline-block;
+  width: auto;
+  float: right
+  margin-top: 4px;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
 nav > ul> li {
   display: inline-block;
-
-
 }
 nav > ul > li a {
   padding: 0 15px;
@@ -37,7 +38,7 @@ nav > ul > li a {
 nav > ul > li > a:visited {
   color: #d46d18;
 }
-}
+
 * {
   box-sizing: border-box;
 }
@@ -136,6 +137,11 @@ transition: all 0.4s ease 0s;
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+.row::after {
+  content:"";
+  clear: both;
+  display: table;
+}
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
@@ -143,6 +149,7 @@ transition: all 0.4s ease 0s;
   background-color: #52514f;
   padding: 10px 0;
   display: inline-block;
+  text-align: center;
   width: 100%
 }
 #hero h1 {
@@ -154,4 +161,41 @@ transition: all 0.4s ease 0s;
 }
 #work h2 {
   text-align:center
+}
+
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+float: left;
+padding: 10px;
 }
