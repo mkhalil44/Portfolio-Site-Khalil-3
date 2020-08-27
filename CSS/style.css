@@ -16,13 +16,6 @@ header {
   position: relative;
 }
 
-nav {
-  display: inline-block;
-  width: auto;
-  float: right
-  margin-top: 4px;
-}
-
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -83,14 +76,13 @@ a {
 a:visited { /* visited link */
   color: #d46d18;
 }
-a:hover,
-a:focus {
+a:hover,a:focus {
   color: #d46d18;
   text-transform: uppercase;
   font-weight: 700;
-  text-decoration: underline; /* Underlining when hovering over a link */ }
-
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:active { /* selected link */
   color: #A54C05;
 }
@@ -143,7 +135,7 @@ transition: all 0.4s ease 0s;
   display: table;
 }
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 25px;
 }
 #hero {
   background-color: #52514f;
@@ -163,7 +155,7 @@ transition: all 0.4s ease 0s;
   text-align:center
 }
 
-}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -171,12 +163,18 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -188,14 +186,29 @@ Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
 }
-/* ==============================
-Medium devices (640px and larger)
-================================= */
+
 }
 .col-md-6 {
-  width: 50%;
+float: left;
+width: 50%;
 }
 [class*="col-"] {
 float: left;
 padding: 10px;
+}
+.col-md-8 {
+  float: left;
+  width: 66.66%;
+}
+.col-md-4 {
+  float: left;
+  width: 33.33%;
+}
+.col-lg-5 {
+  float: left;
+  width: 41.66%
+}
+.col-lg-7 {
+  float: left;
+  width: 58.33%
 }
