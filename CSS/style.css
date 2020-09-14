@@ -76,6 +76,7 @@ h4 {
 img {
   width: 100%;
 }
+
 a {
   color: #52514f;
   text-transform: uppercase;
@@ -271,6 +272,7 @@ transition: all 0.4s ease 0s;
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
+
 }
 
 .navtoggle.responsive li:last-child  {
@@ -306,6 +308,7 @@ nav {
    width:auto;
    float: right;
    margin-top: 4px;
+ }
 .logo {
   min-width: 100px
 }
