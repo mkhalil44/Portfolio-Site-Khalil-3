@@ -9,31 +9,34 @@ font-family: 'Montserrat', sans-serif;
 
 header {
   background-color: #ffffff;
-  padding: 10px 0 4px;
   position: relative;
+  padding: 0px;
 }
 nav {
    width: auto;
-   float: right;
    margin-top: 4px;
  }
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 nav > ul > li a {
-  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
   text-transform: uppercase;font-weight: 700;
-  color: #ffffff
+  color: #ffffff;
+  float: right;
 }
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right: 10;
+  padding-right: 10px;
 }
 
 
@@ -79,7 +82,7 @@ img {
   border: 12px solid #030E28;
   border-radius: 4px;
   padding: 5px;
-  width: 50%;
+  width: 30%;
 }
 
 a {
@@ -102,7 +105,7 @@ a:active { /* selected link */
 }
 
   .button {
-  color: #fff !important;
+  color: #4A4A4A !important;
 text-transform: uppercase;
 text-decoration: none;
 background: #50CBCE;
@@ -116,9 +119,9 @@ transition: all 0.4s ease 0s;
 .button:hover {
 background: #00AFB3;
 letter-spacing: 1px;
--webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
--moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+-webkit-box-shadow: 0px 5px 40px 10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px 10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px 10px rgba(0,0,0,0.57);
 transition: all 0.4s ease 0s;
 text-decoration: none;
 }
@@ -145,7 +148,14 @@ transition: all 0.4s ease 0s;
 .container {
   padding: 0 15px;
 }
-
+.row-header {
+  margin: 5px 0;
+}
+.row-header::after {
+  content:"";
+  clear: both;
+  display: table;
+}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
@@ -179,24 +189,26 @@ transition: all 0.4s ease 0s;
 }
 #hero h1 {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #fff;
-    font : normal 600 72px/1 'Open Sans', sans-serif;
-    text-align: center;
-    white-space: nowrap;
+    font : normal 600 72px/1 'Montserrat', sans-serif;
+
+
+
 }
 h1 span {
     display: block;
-    margin-top: 1em;
+    margin-top: 10em;
     font-size: 40px;
     font-weight: 300;
+
 }
 
 
-}
+
 @-webkit-keyframes gradientAnimation {
    0%   { background-position: 0% 30%, 0 0;}
    50%  { background-position: 100% 70%, 0 0;}
@@ -209,19 +221,15 @@ h1 span {
 }
 
 
-#hero h1 {
-  text-align: center;
-  color: #ffffff;
-}
-
 
 .logo{
-  width: 50%;
+  width: 30%;
   height: auto;
-  padding: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 #work h2 {
-  text-align:center
+  text-align:center;
   padding-left: 25px;
 }
 #work img {
@@ -350,14 +358,15 @@ nav {
    float: right;
    margin-top: 4px;
  }
-.logo {
-  min-width: 100px
-}
+
 nav > ul {
   margin: 1em 0;
+  float: right;
 }
 nav > ul> li {
   display: inline-block;
+  float: right;
+  padding-right: 20px;
 }
 .navtoggle li:not(:last-child) {
   display: inline-block;
@@ -365,12 +374,7 @@ nav > ul> li {
 .navtoggle li:last-child {
   display: none;
 }
-#hero {
-     text-align: center;
-   }
- #hero span {
- display: block;
-}
+
 
 
 }
@@ -429,7 +433,21 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
+nav > ul {
+  margin: 1em 0;
+  float: right;
+}
+nav > ul> li {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 }
 
 /* ==============================
@@ -437,10 +455,23 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
+nav > ul {
+  margin: 1em 0;
+  float: right;
+}
+nav > ul> li {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-}
-
 }
