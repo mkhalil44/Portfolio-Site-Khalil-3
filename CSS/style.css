@@ -38,7 +38,12 @@ nav > ul > li a {
   font-size: 20px;
   padding-right: 10px;
 }
-
+.logo{
+  width: 30%;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+}
 
 * {
   box-sizing: border-box;
@@ -180,23 +185,19 @@ a:active { /* selected link */
 }
 
 #hero {
+  margin-bottom: 0px;
 
 }
 
 
 
-.logo{
-  width: 40%;
-  height: auto;
-  padding-left: 10px;
-  padding-top: 10px;
-}
+
 #work {
-  background: rgba(222,233,241,0.8); 
+  background: rgba(222,233,241,0.8);
 }
 #work h2 {
   text-align:center;
-  padding-left: 25px;
+
 }
 #work img {
   border: 8px solid #030E28;
@@ -222,7 +223,7 @@ a:active { /* selected link */
   background: rgba(222,233,241,0.8); margin-right: 25px; margin-left: 25px;
 }
 #project img {
-  border: 12px solid #52514f;
+  border: 8px solid #52514f;
   border-radius: 4px;
   padding: 5px;
 }
@@ -340,9 +341,6 @@ nav > ul> li {
 .navtoggle li:last-child {
   display: none;
 }
-
-
-
 }
 /* ==============================
 Large devices (1024px or larger)
